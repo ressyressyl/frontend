@@ -1,0 +1,23 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Frontend Application using Electron with integration of OpenAI Api",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ressyressyl/frontend.git"
+  },
+  "author": "Ressyl Mae Pantilo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ressyressyl/frontend/issues"
+  },
+  "homepage": "https://github.com/ressyressyl/frontend#readme",
+  "devDependencies": {
+    "electron": "^24.3.1"
+  }
+}
