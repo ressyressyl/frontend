@@ -1,2 +1,12 @@
-const information = document.getElementById("info");
-information.innerText = `This app is using Chrome (v${versions.chrome()}), Node.js (v${versions.node()}), and Electron (v${versions.electron()})`;
+const form = document.getElementById("form_create");
+if (form) {
+    form.onsubmit = function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+
+        for (const [key, value] of formData) {
+            console.log(`${key}: ${value}\n`);
+        }
+    }
+}
