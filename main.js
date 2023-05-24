@@ -12,9 +12,9 @@ const createWindow = () => {
     },
   });
 
-if( isDev){
-  win.webContents.openDevTools();
-}
+  if (isDev) {
+    win.webContents.openDevTools();
+  }
 
   win.loadFile(path.join(__dirname, "./renderer/index.html"));
 };
