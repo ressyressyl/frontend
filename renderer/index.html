@@ -1,36 +1,29 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
-    <title>Interview Questions App</title>
+    <title>Interview Questions Generator</title>
+    <link rel="stylesheet" href="style.css">
     <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
   </head>
 
   <body class="bg-dark">
-
-    <div class="container bg-warning bg-opacity-10 border border-warning p-5 mt-2">
-      <h1 class="text-center text-white font-monospace"><ins><strong>Interview Questions</strong></ins></h1>
-
+    <div class="container p-5 mt-2">
+      <h1 class="text-center text-white font-sans-serif"><ins><strong>Interview Questions</strong></ins></h1><br>
         <form class="" id="form_create">
-          <label class="form-label text-white" for="create"></label><br>
-          <textarea class="form-control mb-3 font-monospace" name="create" name="create" rows=2 cols=100 placeholder="Create a list of 8 questions for my interview with..."></textarea><br>
-          <center><input class="btn btn-warning mb-3" type="submit" value="Submit"></center>
-        </form>
-        <br>
-
-
-        <label class="form-label text-white font-monospace" for="list"><i>Results:</i></label>
-        <div class="mt-3 border border-warning">
-          <textarea class="form-control font-monospace" id="list" rows="12" cols="70" readonly></textarea>
+          <label class="form-label text-white" for="create">Interview</label><br>
+          <input type="text" class="font-sans-serif" for="create" name="create" placeholder="Create a list of 8 interview questions..."><br><br>
+          <center><input class="btn btn-primary col-4 font-sans-serif btn-block btn-large" type="submit" value="Submit"></center>
+        </form><br>
+        <label class="form-label text-white font-sans-serif" for="list"><i>Results:</i></label>
+        <div class="mt-3">
+          <textarea class="font-sans-serif" id="list" rows="12" cols="82" readonly></textarea>
         </div>
-
     </div>
 
     <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
   </body>
   <script src="./js/renderer.js"></script>
-
 </html>
